@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы "
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="libcmd" projectFiles="true">
+        <itemPath>dms.h</itemPath>
+        <itemPath>libcmd.c</itemPath>
+        <itemPath>libcmd.h</itemPath>
+        <itemPath>libcmd_acl.c</itemPath>
+        <itemPath>libcmd_async.c</itemPath>
+        <itemPath>libcmd_async_procs.c</itemPath>
+        <itemPath>libcmd_dir.c</itemPath>
+        <itemPath>libcmd_exchange.c</itemPath>
+        <itemPath>libcmd_print.c</itemPath>
+        <itemPath>libcmd_quota.c</itemPath>
+        <itemPath>libcmd_shell.c</itemPath>
+        <itemPath>libcmd_sys.c</itemPath>
+        <itemPath>libcmd_sys.h</itemPath>
+        <itemPath>libcmd_utils.c</itemPath>
+        <itemPath>libcmd_xattr.c</itemPath>
+        <itemPath>m_crypt.c</itemPath>
+        <itemPath>m_crypt.h</itemPath>
+      </logicalFolder>
+      <itemPath>become_daemon.c</itemPath>
+      <itemPath>config.c</itemPath>
+      <itemPath>get_num.c</itemPath>
+      <itemPath>logging.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>pipe_bind.c</itemPath>
+      <itemPath>sig_handlers.c</itemPath>
+      <itemPath>ugid_functions.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+      <itemPath>become_daemon.h</itemPath>
+      <itemPath>dmsd.h</itemPath>
+      <itemPath>get_num.h</itemPath>
+      <itemPath>logging.h</itemPath>
+      <itemPath>tlpi_hdr.h</itemPath>
+      <itemPath>ugid_functions.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/dmsdd</output>
+          <commandLine>-lconfig -lsmbclient -lpthread -ljansson -lacl -lattr -lmcrypt -lssl</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="become_daemon.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="become_daemon.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="dms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dmsd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="get_num.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="get_num.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libcmd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libcmd_acl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_async.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_async_procs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_dir.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_exchange.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_print.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_quota.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_shell.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_sys.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_sys.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libcmd_utils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_xattr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="logging.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="logging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="m_crypt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="m_crypt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="pipe_bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="sig_handlers.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tlpi_hdr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ugid_functions.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ugid_functions.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <commandLine>-lconfig -lsmbclient -lpthread -ljansson -lacl -lattr -lmcrypt -lssl</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="become_daemon.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="become_daemon.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="dms.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dmsd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="get_num.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="get_num.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libcmd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libcmd_acl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_async.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_async_procs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_dir.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_exchange.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_print.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_quota.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_shell.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_sys.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_sys.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="libcmd_utils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libcmd_xattr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="logging.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="logging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="m_crypt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="m_crypt.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="pipe_bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="sig_handlers.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tlpi_hdr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ugid_functions.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ugid_functions.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
